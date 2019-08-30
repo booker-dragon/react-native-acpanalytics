@@ -1,12 +1,17 @@
 
 # React Native AEP Analytics Extension
 
+[![npm version](https://badge.fury.io/js/%40adobe%2Freact-native-acpanalytics.svg)](https://badge.fury.io/js/%40adobe%2Freact-native-acpanalytics) [![CircleCI](https://img.shields.io/circleci/project/github/adobe/react-native-acpanalytics/master.svg?logo=circleci)](https://circleci.com/gh/adobe/workflows/react-native-acpanalytics) ![NPM](https://img.shields.io/npm/l/@adobe/react-native-acpanalytics.svg)
+
+
 `@adobe/react-native-acpanalytics` is a wrapper around the iOS and Android [AEP Analytics SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics) to allow for integration with React Native applications. Functionality to enable Adobe Analytics is provided entirely through JavaScript documented below.
 
 
 ## Installation
 
 You need to install the SDK with [npm](https://www.npmjs.com/) and configure the native Android/iOS project in your react native project. Before installing the Analytics extension it is recommended to begin by installing the Core extension `@adobe/react-native-acpcore`.
+
+> Note: If you are new to React Native we suggest you follow the [React Native Getting Started](<https://facebook.github.io/react-native/docs/getting-started.html>) page before continuing.
 
 ### 1. Create React Native project
 
@@ -21,8 +26,15 @@ react-native init MyReactApp
 Install and link the `@adobe/react-native-acpanalytics` package:
 
 ```bash
+cd MyReactApp
 npm install @adobe/react-native-acpanalytics
 react-native link @adobe/react-native-acpanalytics
+```
+
+## Tests
+This project contains jest unit tests which are contained in the `__tests__` directory, to run the tests locally:
+```
+make run-tests-locally
 ```
 
 ## Usage
